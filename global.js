@@ -50,11 +50,11 @@ const BASE_PATH =
 
 let pages = [
   { url: "", title: "Home" },
-  { url: "projects/", title: "Projects" },
-  { url: "contact/", title: "Contact" },
-  { url: "resume/", title: "Resume" },
-  { url: "https://github.com/Colin-Tran", title: "GitHub" },
+  { url: "more.html", title: "More Repercussions" },
+  { url: "less.html", title: "Less Repercussions" },
+  { url: "writeup.html", title: "Writeup" }
 ];
+
 
 let nav = document.createElement('nav');
 document.body.prepend(nav);
