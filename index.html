@@ -174,12 +174,42 @@
                 <p>Design Decisions and Rationale:</p>
 
                 <ul>
-                    <li>We chose a bar graph to display these differences because it clearly shows how the distribution of outcomes changes across discrete complaint history bins, making trends in substantiation rates easy to interpret and the directed outcome we want our audience to see with this visualization</li>
-                    <li>Substantiated outcomes are highlighted with the blue color, making it so that it pops out and the audience focuses on it. Unsubstantiated and exonerated are both shades of gray, making them blend together and recede into the background allowing more viewer attention to be directed toward the substantiation rate.</li>
-                    <li>We used percentages instead of raw counts to make groups directly comparable. This allowed us to compare rates, making high-complaint groups appear less accountable than total counts would make them appear.</li>
-                    <li>The use of stacked bars emphasizes proportions within each complaint group rather than the total difference between groups, which supports the argument about declining accountability rates rather than total outcomes.</li>
-                    <li>We ordered the complaint bins from lowest to highest to create a clear left-to-right narrative progression, making the downward trend in substantiation rates feel more natural and easier to follow.</li>
-                    <li>We included a clear title and caption for the visualization to provide context and guide the audience's interpretation towards our intended conclusion.</li>
+                    <li>
+                        <strong>
+                        Used a stacked bar chart representing 100% to compare outcome shares across complaint-history groups (0.5)
+                        </strong><br>
+                         We chose a stacked percentage bar chart because it makes differences in proportions easy to compare across bins, allowing for valid comparisons across groups. This supports our argument about accountability rates rather than total case volume. It works well because viewers quickly notice the shrinking blue section, though it hides differences in the actual number of complaints each group contains. We also considered using a non-normalized stacked bar chart, but comparisons were harder because officers with more complaints naturally had higher counts in every outcome category. It was persuasive because it shifts attention from volume to efficiency.
+                    </li>
+                    
+                    <li>
+                        <strong>
+                        Highlighted substantiated outcomes in blue while muting other outcomes in gray (-1.0)
+                        </strong><br>
+                         The blue substantiated segment draws immediate attention, while gray tones for exonerated and unsubstantiated outcomes fade into the background. This helps direct viewers toward the part of the chart most relevant to our claim. An alternative would have been equally vivid and balanced colors, but we intentionally used contrast to steer the audience’s focus.    
+                    </li>
+
+                    <li>
+                        <strong>
+                        Ordered bins from lowest to highest complaint history (+1.5)
+                        </strong> <br>
+                        Placing bins in ascending order creates a natural left-to-right flow that makes the downward trend easy to follow. There was no need to reorder the bars to better fit the narrative we wanted. This is an earnest design choice because it improves readability while still supporting our story. Random or alphabetical ordering would have weakened the visual progression.
+                    </li>
+                    
+
+                     
+                    <li>
+                        <strong>
+                        Used a strong, directive title and subtitle (-1.5)
+                        </strong>  <br>
+                        The wording explicitly tells viewers what conclusion to draw before reading the chart. This is persuasive because it frames interpretation in advance. A more neutral title would simply describe the data, but we chose assertive language to reinforce the argument and encourage the audience to interpret substantiated outcomes as accountability.    
+                    </li>
+
+                    <li>
+                        <strong>
+                        Used uneven and increasingly wide complaint bins (-1.5)
+                        </strong><br>
+                        The later bins (e.g., “12+”) group together a wide range of officers, which smooths out variability and makes the downward trend appear more consistent and pronounced. This is persuasive because it reduces noise and highlights the pattern we want the audience to see. A more uniform binning strategy would show more variation, but we chose uneven bins to emphasize a clearer narrative.
+                    </li>
                 </ul>
             </section>
 
@@ -194,12 +224,48 @@
                 <p>Design Decisions and Rationale:</p>
 
                 <ul>
-                    <li>The title we chose isn't neutral and is instead directive toward the conclusion we want our viewers to make when faced with this visualization</li>
-                    <li>The complaint bins become progressively wider (e.g., “12+”), which concentrates more cases into later groups and makes the upward trend appear smoother and more dramatic.</li>
-                    <li>We omitted the number of officers in each bin, removing important context that would help interpret whether the increase is due to more officers or more complaints per officer.</li>
-                    <li>The final bin (“12+”) has no upper bound, grouping all high-complaint officers together and inflating the size of the final bar.</li>
-                    <li>We chose to use the raw counts of substantiated cases per group make the groups with more total complaints appear larger and thus make them look as if they face more accountability and consequences.</li>
-                    <li>Only substantiated complaint counts are shown, leaving out unsubstantiated and exonerated outcomes, which removes context that could weaken the perceived relationship.</li>
+                    <li>
+                        <strong>
+                        Used a bar chart with raw substantiated counts (-1.0)
+                        </strong><br>
+                        Raw counts make later complaint-history groups appear much larger because they contain more complaints overall. This supports the claim that heavily complained-about officers face more accountability. A rate-based chart would have weakened this message.
+                    </li>                                                               
+
+                    <!-- <li>
+                        <strong>
+                        Made the final category open-ended (“17+”) (-2.0)
+                        </strong><br>
+                        The last bin has no upper bound, combining all officers with very high complaint totals into one bar. This inflates the final column and creates a dramatic ending point. A capped size for the final bin could have reduced this effect.
+                    </li> -->
+
+                    <li>
+                        <strong>
+                            Used progressively wider complaint bins and an open-ended final bin (-2.0)
+                        </strong><br>
+                        Later bins contain wider ranges of officers, concentrating more observations into the final categories. This amplifies the upward trend, making it appear stronger than it would with evenly sized bins. Additionally, the final bin has no upper bound, grouping all high-complaint officers into a single category, which inflates the final bar and creates a dramatic endpoint. A more consistent binning strategy with capped ranges would reduce this effect and reveal more variation in the data.
+                    </li>
+
+                    <li>
+                        <strong>
+                            Later bins contain wider ranges of officers, concentrating more observations into the final categories. This amplifies the upward trend, making it seem stronger than if bins were equal width. It is one of the most deceptive choices because the grouping drives the pattern and makes the final open ended bin’s size not as much of an outlier.
+                        </strong><br>
+                        We did not show how many officers or complaints fall into each category, removing context viewers would need to judge whether the increase reflects accountability or simply larger group size. This omission makes the pattern easier to accept at face value.
+                    </li>
+
+                    <li>
+                        <strong>
+                            Displayed only substantiated outcomes (-1.5)
+                        </strong><br>
+                         By excluding exonerated and unsubstantiated complaints, the chart focuses only on evidence that supports our claim. This simplifies the message and strengthens the appearance of accountability. Including all outcomes would provide fuller context but weaken persuasion, this is because the audience would see that officers with more raw counts of substantiation would also have more raw counts of exonerated cases and unsubstantiated cases.
+                    </li>
+
+                    <li>
+                        <strong>
+                        Used a strong, directive title and subtitle (-1.5)
+                        </strong><br>
+                        The wording explicitly tells viewers what conclusion to draw before they interpret the chart, framing total substantiated outcomes as evidence of greater accountability. This is persuasive because it guides interpretation in advance rather than allowing the viewer to form their own conclusion. A more neutral title would simply describe the data, but we chose assertive language to reinforce the argument.
+                    </li>
+
                 </ul>
             </section>
 
@@ -212,12 +278,8 @@
                 
                 <p>
                     When exploring the data and through the lens of our proposition, we decided that we wanted to try different kinds of plots just to see what looks visually appealing and gets our point across the most. We found this part of the project pretty difficult just because there are so many potential visualizations and styles of plots to communicate our proposition and intended conclusion. When comparing, we found that the bar plots ended up doing better at getting our intended conclusion communicated. As we explored the different kinds of bar plots, we found the stacked bar plot. One thing that surprised us was finding out that very small design decisions can really impact what conclusion our visualization was communicating. For example, the right bins chosen could communicate and almost dramatize the relationship between substantiation and complaint rate to promote our conclusion. If we binned it differently or used different aggregates it could completely flip the narrative created so it was interesting to see and understand these nuances.  
-                </p>
-                
-                <p>
                     We also did the same sort of process for the “counter” to our original visualization. We explored different plots, different aggregates, etc. We ended up using the same bar plots but instead of looking at the substantiation rates, we looked at the aggregate number of substantiations per group. This allowed us to flip the narrative and show an increasing total as the number of complaints increased.
                 </p>
-                
                 <p>
                     Throughout this design process we were able to better understand what “ethical analysis and visualization” is. Now, we all understand that it isn’t about just presenting the data, it also includes how we present the data to our audience. We also need to be completely transparent about the design choices and transformations we make to not be “unethical” or misleading. Many of our decisions, such as our choices of binning or aggregating, were designed to be a bit misleading emphasizing how important our design choices are and how they impact the conclusions we suggest.
                 </p>
